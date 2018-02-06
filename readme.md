@@ -9,7 +9,10 @@ Some application servers (e.g. Ruby's Unicorn) halt progress when dealing with n
 ## Versions
 
 * Buildpack Version: 1.0
-* NGINX Version: 1.9.5
+* NGINX Version: 1.12.2
+* PCRE Version: 8.4.1
+* HEADERS MORE Version: 0.33
+* ZLib Version: 1.2.11
 
 ## Requirements
 
@@ -74,8 +77,8 @@ See [scripts/build_nginx](scripts/build_nginx) for the build steps. Configuring 
 You can run the builds in a [Docker](https://www.docker.com/) container:
 
 ```
-$ docker-machine create --driver virtualbox cedar
-$ eval "$(docker-machine env ceder)"
+$ docker-machine create --driver virtualbox heroku
+$ eval "$(docker-machine env heroku)"
 $ make build # It outputs the latest builds to bin/cedar-*
 ```
 
